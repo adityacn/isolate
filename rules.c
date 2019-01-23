@@ -427,7 +427,7 @@ apply_dir_rules(int with_defaults)
 	}
       else
 	{
-	  mount_flags |= MS_BIND | MS_NOSUID;
+	  mount_flags |= MS_BIND | MS_NOSUID | MS_REC;;
 	  msg("Binding %s on %s (flags %lx)\n", out, in, mount_flags);
 
 	  /*
